@@ -1,0 +1,17 @@
+/* Социальные ссылки */
+
+.social-list {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
