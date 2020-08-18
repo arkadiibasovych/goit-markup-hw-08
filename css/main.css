@@ -386,14 +386,22 @@ header .logo {
   letter-spacing: 0.03em;
 }
 
+.lesson {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header .logo {
   color: #000000;
 }
 
 /* Чем мы занимаемся */
 .lesson {
-  margin-bottom: 94px;
   display: none;
+  margin-bottom: 94px;
+  width: 1200px;
 }
 
 @media screen and (min-width: 1200px) {

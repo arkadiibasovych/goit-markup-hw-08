@@ -1,8 +1,11 @@
 /* Чем мы занимаемся */
 
 .lesson {
-  margin-bottom: 94px;
+  @extend %container;
+
   display: none;
+  margin-bottom: 94px;
+  width: 1200px;
 
   @media screen and (min-width: 1200px) {
     display: block;
