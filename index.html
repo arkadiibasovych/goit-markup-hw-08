@@ -13,60 +13,76 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo link" href="./index.html" lang="en"
-            ><span class="logo-accent">Web</span> Studio</a
-          >
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link current" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
+    <header class="container">
+      <div class="header-container">
+<!-- logo -->
+<a class="logo link" href="./index.html" lang="en">
+  <span class="logo-accent">Web</span> Studio
+</a>
 
-          <ul class="address-list list">
-            <li class="address-list-item">
+<button class="header-button">
+  <svg class="header-button-icon" width="40" height="40">
+    <use class="header-button-icon-menu" href="./images/sprite.svg#icon-menu"  >
 
-<svg class="address-list-item-svg icon-mail" width="16px" height="11.2px">
-  <use href="./images/sprite.svg#icon-mail"></use>
+    </use>
+    <use class="header-button-icon-closed" href="./images/sprite.svg#icon-close" >
+    
+    </use>
+  </svg>
 
-              <address class="header-address">
-                
-                </svg>
 
-                <a
-                  class="adress-list-link link"
-                  href="mailto:info@devstudio.com"
-                  lang="en"
-                  >info@devstudio.com</a
-                >
-              </address>
-            </li>
+</button>
 
-            <li class="address-list-item">
-              <svg class="address-list-item-svg" width="10px" height="14.94px">
-                <use href="./images/sprite.svg#icon-telephone"></use>
-              </svg>
-              <address class="header-address">
-                <a class="adress-list-link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </address>
-            </li>
-          </ul>
-        </nav>
+<div class="nav-and-address">
+
+  <nav class="navigation">
+  
+    <ul class="navigation-list list">
+      <li class="navigation-list-item">
+        <a class="navigation-list-link link current" href="./index.html">Студия</a>
+      </li>
+      <li class="navigation-list-item">
+        <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
+      </li>
+      <li class="navigation-list-item">
+        <a class="navigation-list-link link" href="#contacts">Контакты</a>
+      </li>
+    </ul>
+  
+  </nav>
+  
+  <ul class="address-list list">
+    <li class="address-list-item">
+  
+      <svg class="address-list-item-svg icon-mail" width="16px" height="11.2px">
+        <use href="./images/sprite.svg#icon-mail"></use>
+  
+        <address class="header-address">
+  
+      </svg>
+  
+      <a class="adress-list-link link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+      </address>
+    </li>
+  
+    <li class="address-list-item">
+      <svg class="address-list-item-svg" width="10px" height="14.94px">
+        <use href="./images/sprite.svg#icon-telephone"></use>
+      </svg>
+      <address class="header-address">
+        <a class="adress-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </address>
+    </li>
+  </ul>
+</div>
+
+
+
+
       </div>
+        
+
+      
     </header>
     <main>
       <!--Герой-->
@@ -137,7 +153,7 @@
 
       <!--Чем мы занимаемся-->
       <section>
-        <div class="lesson">
+        <div class="lesson container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="lesson-list list">
             <li class="lesson-list-item">

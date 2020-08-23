@@ -1,4 +1,53 @@
-header .logo {
-  @extend %logo;
-  color: #000000;
+header {
+  position: relative;
+
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and(max-width:767px) {
+    position: relative;
+  }
+
+  @media screen and(min-width:768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-top: 24px;
+    padding-bottom: 2px;
+  }
+  .logo {
+    @extend %logo;
+    color: #000000;
+  }
+
+  .logo-accent {
+    color: $accent-color;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-and-address {
+  position: absolute;
+  top: 100%;
+}
+
+.header-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.header-button-icon {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }

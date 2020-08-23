@@ -45,7 +45,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -82,7 +83,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -229,7 +231,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -263,7 +266,8 @@ textarea {
  */
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -339,13 +343,15 @@ template {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -363,8 +369,6 @@ img {
 }
 
 .list {
-  margin-top: 0;
-  margin-bottom: 0;
   list-style: none;
   padding-left: 0px;
 }
@@ -389,67 +393,19 @@ header .logo {
 }
 
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-header {
-  position: relative;
-  align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
-}
-
-@media screen and (max-width: 767px) {
-  header {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    padding-top: 24px;
-    padding-bottom: 2px;
-  }
-}
-
 header .logo {
   color: #000000;
 }
 
-header .logo-accent {
-  color: #2196f3;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-and-address {
-  position: absolute;
-  top: 100%;
-}
-
-.header-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.header-button-icon:hover, .header-button-icon:focus {
-  fill: #2196f3;
+header .accent-logo {
+  color: aquamarine;
 }
 
 /* Чем мы занимаемся */
@@ -466,6 +422,8 @@ header .logo-accent {
 }
 
 .lesson-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
