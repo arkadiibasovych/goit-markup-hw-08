@@ -13,7 +13,7 @@
 
   .logo {
     @extend %logo;
-    color: #000000;
+    color: #000;
 
     @media screen and(min-width:768px) {
       margin-right: 88px;
