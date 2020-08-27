@@ -45,44 +45,27 @@
     }
   }
 
+  &-icon-closed {
+    display: none;
+  }
+
+  &.is-open {
+    .header-button-icon-menu {
+      display: none;
+    }
+
+    .header-button-icon-closed {
+      display: block;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.header-button-icon-closed {
+.menu-wrapper {
   display: none;
-}
-
-.icon-mail {
-  width: 16px;
-  height: 11.2px;
-
-  @media screen and (min-width: 768px) {
-    width: 14px;
-    height: 10px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 16px;
-    height: 12px;
-  }
-}
-
-.icon-telephone {
-  width: 10px;
-  height: 14.94px;
-
-  @media screen and (min-width: 768px) {
-    width: 10px;
-    height: 14px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 10px;
-    height: 16px;
-  }
-}
-
-.nav-and-address {
   @media screen and( max-width:767px ) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -95,6 +78,9 @@
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  &.is-open {
+    display: block;
   }
 
   @media screen and(min-width:768px) {
@@ -189,6 +175,34 @@
 .address-list {
   @media screen and(min-width:1200px) {
     display: flex;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 11.2px;
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-telephone {
+  width: 10px;
+  height: 14.94px;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
   }
 }
 
