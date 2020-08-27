@@ -1,27 +1,23 @@
-header {
+.header {
   position: relative;
 
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
   border-bottom: 1px solid #ececec;
 
   @media screen and(max-width:767px) {
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
-  @media screen and(min-width:768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  @media screen and(min-width:1200px) {
-    padding-top: 24px;
-    padding-bottom: 2px;
-  }
   .logo {
     @extend %logo;
     color: #000000;
+
+    @media screen and(min-width:768px) {
+      margin-right: 88px;
+    }
   }
 
   .logo-accent {
@@ -31,23 +27,210 @@ header {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.nav-and-address {
-  position: absolute;
-  top: 100%;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header-button {
   background-color: transparent;
   border: none;
   padding: 0;
+  transition: fill 250ms $timing-function;
+  &-icon {
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-.header-button-icon {
+
+.header-button-icon-closed {
+  display: none;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 11.2px;
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-telephone {
+  width: 10px;
+  height: 14.94px;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.nav-and-address {
+  @media screen and( max-width:767px ) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and(min-width:768px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+  @media screen and(max-width:767px) {
+    margin-bottom: 52px;
+  }
+}
+
+.navigation-list {
+  @media screen and( min-width:768px) {
+    display: flex;
+  }
+}
+
+.navigation-list-link {
+  position: relative;
+  display: block;
+  color: #212121;
+  transition: color 250ms $timing-function;
+
   &:hover,
-  &:focus {
+  :focus {
+    color: $accent-color;
+  }
+
+  @media screen and(max-width:767px) {
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  @media screen and(min-width:768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.navigation-list-item {
+  @media screen and(max-width:767px) {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and( min-width:768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.current {
+  color: $accent-color;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+
+    transition: opacity 250ms $timing-function;
+  }
+}
+
+.navigation-list-link,
+.adress-list-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.address-list {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
+.address-list-item {
+  display: flex;
+  align-items: center;
+
+  @media screen and(max-width:767px) {
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.adress-list-link {
+  color: #757575;
+  transition: color 250ms $timing-function;
+
+  .address-list-item:hover &,
+  .address-list-item:focus & {
+    color: $accent-color;
+  }
+
+  @media screen and(min-width:768px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.address-list-item-svg {
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms $timing-function;
+
+  .address-list-item:hover &,
+  .address-list-item:focus & {
     fill: $accent-color;
   }
 }
