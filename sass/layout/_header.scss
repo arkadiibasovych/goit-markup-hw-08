@@ -74,6 +74,7 @@
     left: 50%;
     transform: translateX(-160%);
     transition: transform 250ms $timing-function;
+    z-index: 2;
 
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
