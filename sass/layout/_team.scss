@@ -9,12 +9,39 @@
 
   .social-link {
     background-color: transparent;
+    transition: background-color 250ms $timing-function;
+
+    @media screen and(min-width:1200px) {
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+      }
+    }
   }
 
   .social-list-item-svg {
     fill: #afb1b8;
+    transition: fill 250ms $timing-function;
   }
 }
+
+@media screen and(min-width:1200px) {
+  .social-link:hover .social-list-item-svg,
+  .social-link:focus .social-list-item-svg {
+    fill: #fff;
+  }
+}
+
+.team-list {
+  @media screen and (min-width: 768px) {
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .team-list-item {
   padding-bottom: 24px;
   background-color: #fff;
@@ -24,6 +51,16 @@
 
   @media screen and(max-width:767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 354px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 270px;
+    padding-bottom: 30px;
   }
 
   img {
