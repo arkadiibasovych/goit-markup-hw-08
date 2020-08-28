@@ -1189,10 +1189,16 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-center-side {
+    padding-top: 5px;
+  }
+}
+
 .slogan {
   display: block;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
@@ -1247,11 +1253,39 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form-input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+  }
+}
+
 .footer-form-button-txt {
   margin-right: 10px;
 }
 
 .footer-form-button-svg {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-main {
+    padding-left: 76px;
+    padding-right: 89px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */
