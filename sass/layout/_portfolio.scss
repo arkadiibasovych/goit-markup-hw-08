@@ -68,10 +68,24 @@
 
 .gallery-list {
   margin-bottom: -30px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .gallery-list-item {
   margin-bottom: 30px;
+
+  @media screen and(min-width:768px) {
+    margin-right: 30px;
+    width: 354px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 370px;
+  }
 }
 
 .gallery-list-link-image {

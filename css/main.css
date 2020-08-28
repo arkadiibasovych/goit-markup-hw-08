@@ -1661,8 +1661,29 @@ img {
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
 .gallery-list-item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list-item {
+    margin-right: 30px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-list-item {
+    width: 370px;
+  }
 }
 
 .gallery-list-link-image {
