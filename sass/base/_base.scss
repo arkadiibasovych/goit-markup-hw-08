@@ -18,12 +18,20 @@ img {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .link {
