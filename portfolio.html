@@ -12,39 +12,63 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+   
     <!--Шапка-->
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo link" href="./index.html" lang="en"><span class="logo-accent">Web</span> Studio</a>
-          <ul class="navigation-list">
-            <li class="navigation-list-item list">
-              <a class="navigation-list-link link" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation-list-item list">
-              <a class="navigation-list-link link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation-list-item list">
-              <a class="navigation-list-link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
+      <div class="container header-container">
+        <!-- logo -->
+        <a class="logo link" href="./index.html" lang="en">
+          <span class="logo-accent">Web</span> Studio
+        </a>
     
-          <ul class="address-list">
-            <li class="address-list-item list">
+        <button type="button" class="header-button" aria-expanded="false" aria-controls="nav-and-address" data-menu-button>
+          <svg class="header-button-icon" width="40" height="40">
+            <use class="header-button-icon-menu" href="./images/sprite.svg#icon-menu">
     
-              <svg class="address-list-item-svg icon-mail" width="16px" height="11.2px">
+            </use>
+            <use class="header-button-icon-closed" href="./images/sprite.svg#icon-close">
+    
+            </use>
+          </svg>
+    
+    
+        </button>
+    
+        <div class="menu-wrapper" data-menu>
+    
+          <nav class="navigation">
+    
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link " href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+    
+          </nav>
+    
+          <ul class="address-list list">
+            <li class="address-list-item">
+    
+              <svg class="address-list-item-svg icon-mail">
                 <use href="./images/sprite.svg#icon-mail"></use>
-    
-                <address class="header-address">
-    
               </svg>
+    
+              <address class="header-address"></address>
+    
+    
     
               <a class="adress-list-link link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
               </address>
             </li>
     
-            <li class="address-list-item list">
-              <svg class="address-list-item-svg" width="10px" height="14.94px">
+            <li class="address-list-item">
+              <svg class="address-list-item-svg icon-telephone">
                 <use href="./images/sprite.svg#icon-telephone"></use>
               </svg>
               <address class="header-address">
@@ -52,8 +76,9 @@
               </address>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
+    
     </header>
 
     <!--Портфолио-->
@@ -382,5 +407,7 @@
       
         </div>
       </footer>
+
+      <script src="./js/menu.js"></script>
   </body>
 </html>
