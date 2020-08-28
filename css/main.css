@@ -701,9 +701,16 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .address-list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .address-list-item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1139,9 +1146,10 @@ img {
   background-color: #2f303a;
 }
 
-.footer-left-side {
-  text-align: center;
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-left-side {
+    text-align: center;
+  }
 }
 
 .footer-left-side .logo {
@@ -1150,12 +1158,30 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-left-side .logo {
+    display: flex;
+  }
+}
+
 .footer-left-side .logo-accent {
   color: #2196f3;
 }
 
 .contact-list-item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-list-item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list-item {
+    margin-right: 70px;
+  }
 }
 
 .contact-list-address,
@@ -1173,8 +1199,13 @@ img {
 }
 
 .footer-center-side {
-  margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-center-side {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-center-side .social-list {
@@ -1189,12 +1220,6 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-center-side {
-    padding-top: 5px;
-  }
-}
-
 .slogan {
   display: block;
   margin-bottom: 20px;
@@ -1206,13 +1231,14 @@ img {
   color: #ffffff;
 }
 
-.footer-right-side {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .slogan {
+    display: flex;
+  }
 }
 
-.footer-form-input {
-  display: block;
-  margin-bottom: 20px;
+.footer-right-side {
+  text-align: center;
 }
 
 .footer-form-button {
@@ -1261,6 +1287,8 @@ img {
 
 @media screen and (max-width: 1199px) {
   .footer-form-input {
+    margin-bottom: 20px;
+    display: block;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1269,6 +1297,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-form-input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1282,10 +1311,30 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-main {
+    align-items: baseline;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-main {
     padding-left: 76px;
     padding-right: 89px;
-    display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-right-side-form {
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
