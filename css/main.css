@@ -760,6 +760,12 @@ main .container {
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-480@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
@@ -771,6 +777,12 @@ main .container {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-768@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     margin-bottom: 94px;
@@ -778,6 +790,12 @@ main .container {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-1200.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-1200@2x.jpg);
   }
 }
 
@@ -969,6 +987,12 @@ main .container {
   .team-list-item {
     margin-bottom: 60px;
   }
+}
+
+.team-list-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-list-img {

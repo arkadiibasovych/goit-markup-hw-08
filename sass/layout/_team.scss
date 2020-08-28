@@ -25,6 +25,12 @@
   @media screen and(max-width:767px) {
     margin-bottom: 60px;
   }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .team-list-img {
